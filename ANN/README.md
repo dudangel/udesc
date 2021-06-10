@@ -1,9 +1,9 @@
-# Análise númerica
+# Análise Númerica
 
 ## Assuntos P1: 
 Zeros de função, sistemas lineares e sistemas não lineares
 
-### Zeros de Função
+#### Zeros de Função
 
     - [X] Método da biseção (bisection.c)
 
@@ -15,7 +15,7 @@ Zeros de função, sistemas lineares e sistemas não lineares
 
     - [ ] Método do Ponto Fixo
        
-### Sistemas Lineares
+#### Sistemas Lineares
 
     - [X] Método da Eliminação de Gauss (gauss.c)
 
@@ -23,6 +23,6 @@ Zeros de função, sistemas lineares e sistemas não lineares
 
     - [X] Método de Gauss-Seidel (seidel.c)
 
-### Sistemas Não Lineares
+#### Sistemas Não Lineares
 
     - [X] Método de Newton ou Método Iterativo de Newton (newtonIter.c)
