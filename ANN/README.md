@@ -13,7 +13,7 @@ Zeros de função, sistemas lineares e sistemas não lineares
 
     - [X] Método da Posição Falsa (falsePosition.c)
 
-    - [X] Método do Ponto Fixo
+    - [X] Método do Ponto Fixo (fixedPoint.c)
        
 #### Sistemas Lineares
 
