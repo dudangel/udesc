@@ -41,12 +41,12 @@ int main(){
     // bisection(f, a, b, n);
 
     //Exemplo 2
-    double g(double k){
-        return 1000000.0 * exp(k) + (537142.0 / k) * (exp(k) - 1.0) - 1863961.0;
-    }
-    double a2 = 0.001;
-    double b2 = 2;
-    int m = 20;
+    // double g(double k){
+    //     return 1000000.0 * exp(k) + (537142.0 / k) * (exp(k) - 1.0) - 1863961.0;
+    // }
+    // double a2 = 0.001;
+    // double b2 = 2;
+    // int m = 20;
 
     // bisection(g, a2, b2, m);
 
@@ -99,12 +99,31 @@ int main(){
     // int n1 = 5;
 
     //Exercicio 7:
+    // double h(double x){
+    //     return pow(x, 3) - 7 * (pow(x, 2)) + 14 * x -7;
+    // }
+    // double a1 = 0.35229;
+    // double b1 = 4.27165;
+    // int n1 = 5;
+
+    // bisection(h, a1, b1, n1);
+
+    //Exercicio 29:
+    // double g = 9.81;
+    // double c = 26.01;
+    // double v = 30.35;
+    // double t = 7.96;
+
     double h(double x){
-        return pow(x, 3) - 7 * (pow(x, 2)) + 14 * x -7;
+        return (9.81 * x)/26.01 * (1 - exp(-(26.01/x) * 7.96)) -  30.35;
     }
-    double a1 = 0.35229;
-    double b1 = 4.27165;
-    int n1 = 5;
+
+    // double h(double x){
+    //     return (((g * x) * (exp(-(c * t)/x)) - 1) / c ) + v;
+    // }
+    double a1 = 38.31;
+    double b1 = 205.44;
+    int n1 = 20;
     
     bisection(h, a1, b1, n1);
 }

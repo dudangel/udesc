@@ -154,20 +154,37 @@ void main(){
 
     // ---------------------------------------
     //Exercicio 14:
+    // double f(double x){
+    //     return x + 1 - 3 * sin(x);
+    // }
+
+    // //Derivada da função dada
+    // double df(double x){
+    //     return 1 - 3 * cos(x);
+    // }
+
+    // //intervalo dado
+    // double x0 = -0.57722 ;
+
+    // //nro de interações
+    // int n = 5;
+
+    // ---------------------------------------
+    //Exercicio 27:
     double f(double x){
-        return x + 1 - 3 * sin(x);
+        return exp(5*x) - 2;
     }
 
     //Derivada da função dada
     double df(double x){
-        return 1 - 3 * cos(x);
+        return 5 * exp(5*x);
     }
 
     //intervalo dado
-    double x0 = -0.57722 ;
+    double x0 = -1.1677696;
 
     //nro de interações
-    int n = 5;
+    int n = 700;
 
     newton(f, df, x0, n);
 

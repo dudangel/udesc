@@ -87,13 +87,23 @@ int main(){
 
     //-------------------------
     //Exercicio 26
+    //  double f(double x){
+    //     return 2*(x + 1) * (x - 0.5) * (x - 1);
+    // }
+    
+    // double a = -1.8052;
+    // double b = 1.4678;
+    // int n = 5;
+
+    //-------------------------
+    //Exercicio 28
      double f(double x){
-        return 2*(x + 1) * (x - 0.5) * (x - 1);
+        return exp(5*x) - 2;
     }
     
-    double a = -1.8052;
-    double b = 1.4678;
-    int n = 5;
+    double a = -0.98535;
+    double b = 1.92823;
+    int n = 6400;
 
 
     fpos(f, a, b, n);
