@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #define E 2.71828182845904523536
+#define PI 3.14159265358979323846
 
 //Compilar: gcc bissection.c -lm -o bis
 
@@ -109,21 +110,78 @@ int main(){
     // bisection(h, a1, b1, n1);
 
     //Exercicio 29:
+    // m?
     // double g = 9.81;
     // double c = 26.01;
     // double v = 30.35;
     // double t = 7.96;
 
-    double h(double x){
-        return (9.81 * x)/26.01 * (1 - exp(-(26.01/x) * 7.96)) -  30.35;
-    }
+    // double h(double x){
+    //     return (9.81 * x)/26.01 * (1 - exp(-(26.01/x) * 7.96)) -  30.35;
+    // }
 
     // double h(double x){
     //     return (((g * x) * (exp(-(c * t)/x)) - 1) / c ) + v;
     // }
-    double a1 = 38.31;
-    double b1 = 205.44;
-    int n1 = 20;
-    
+    // double a1 = 38.31;
+    // double b1 = 205.44;
+    // int n1 = 20;
+
+    //Exercicio 30:
+    // c?
+    // double g = 9.81;
+    // double v = 52.78;
+    // double t = 8.87;
+    // double m = 74.01;
+
+    // double h(double x){
+    //     return (g * m)/x * (1 - exp(-(x/m) * t)) -  v;
+    // }
+
+    // double a1 = 1;
+    // double b1 = 100;
+    // int n1 = 14;
+
+    //Exercicio 31:           --REFAZER, POIS NA INTERAÇÃ 15 O RESULTADO ESTA INCORRETO!!!!
+    // H?
+    // double g = 9.81;
+    // double L = 4.78;
+    // double t = 9.47;
+    // double v = 4.2;
+
+    // double h(double x){
+    //     return (sqrt(2.0 * g * x) * tanh(((sqrt(2.0 * g * x)) / (2.0 * L)) * t)) - v;
+    // }
+
+    // double a1 = 0.0;
+    // double b1 = 6.0;
+    // int n1 = 15;
+
+    //Exercicio 32:
+    // y?
+    // double q = 198.03;
+    // double g = 9.81;
+
+    // double h(double x){
+    //     return 1 - ((q * q) / (g * pow((4.6 * x + (x * x) / 2.0), 3))) * (4.6 + x);
+    // }
+
+    // double a1 = 0.1;
+    // double b1 = 8;
+    // int n1 = 13;
+
+    //Exercicio 33:
+    // h?
+    double R = 4.52;
+    double V = 264.28;
+
+    double h(double x){
+        return PI * (x * x) * ((3.0 * R - x) / 3.0) - V;
+    }
+
+    double a1 = 0;
+    double b1 = 9.04;
+    int n1 = 11;
+
     bisection(h, a1, b1, n1);
 }
