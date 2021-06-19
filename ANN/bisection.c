@@ -14,9 +14,9 @@ void bisection(double (*f)(double), double a, double b, int n){
         double m = 0;
         for(int i = 0; i < n; i++){
             m = 0.5 * (a + b);
-            printf("x_%d = %.16f\t", i + 1, m);
+            printf("x_%d = %.16lf\t", i + 1, m);
             double fm = f(m);
-            printf("f(x_%d) = %.16f\n", i + 1, fm);
+            printf("f(x_%d) = %.16lf\n", i + 1, fm);
             if(fm == 0){
                 printf("%f é uma raiz", m);
                 return;
@@ -32,12 +32,12 @@ void bisection(double (*f)(double), double a, double b, int n){
 }
 
 int main(){
-    double f(double x){
-        return x * x * x - 2;
-    }
-    double a = 0;
-    double b = 2;
-    int n = 40;
+    // double f(double x){
+    //     return x * x * x - 2;
+    // }
+    // double a = 0;
+    // double b = 2;
+    // int n = 40;
 
     // bisection(f, a, b, n);
 
@@ -172,16 +172,84 @@ int main(){
 
     //Exercicio 33:
     // h?
-    double R = 4.52;
-    double V = 264.28;
+    // double R = 4.52;
+    // double V = 264.28;
 
-    double h(double x){
-        return PI * (x * x) * ((3.0 * R - x) / 3.0) - V;
+    // double h(double x){
+    //     return PI * (x * x) * ((3.0 * R - x) / 3.0) - V;
+    // }
+
+    // double a1 = 0;
+    // double b1 = 9.04;
+    // int n1 = 11;
+
+    //Exercicio 34:
+    // h?
+    // double r = 3.89;
+    // double roS = 245.25;
+    // double roW = 1000;
+
+    // double h(double x){
+    //     return ((PI * (x * x)) / 3.0) * (3.0 * r - x) + ((roS * ((4.0 * PI * pow(r,3)) / 3.0)) / roW) - ((4.0 * PI * pow(r,3)) / 3.0);
+    // }
+
+    // double a1 = 0;
+    // double b1 = 2 * r;
+    // int n1 = 15;
+
+    //Exercicio 35:
+    // lambda?
+    // double P0 = 1593126;
+    // double v = 293626;
+    // double P = 3137076;
+    // double t = 1; 
+
+    // double h(double x){
+    //     return (P0 * exp(x * t) + (v / x) * (exp(x * t) - 1)) - P;
+    // }
+
+    // double a1 = 0.1;
+    // double b1 = 1;
+    // int n1 = 13;
+
+    //Exercicio 36:
+    // h?
+    // double L = 1.95;
+    // double r = 4.47;
+    // double V = 1.69;
+
+    // double h(double x){        
+    //     return ( L * ( 0.5 * PI * r * r - r * r * asin(x/r) - x * sqrt(r * r - x * x) ) ) - V ; 
+    // }
+
+    // double a1 = 0;
+    // double b1 = r;
+    // int n1 = 15;
+
+
+    //Exercicio 37: // iteração 2 com resultado errado
+    // w?
+    //movimento da particula
+    // double mov = 3.7; 
+    // double g = 9.81;
+
+    // double h(double x){        
+    //     return - mov - (g / (2.0 * x * x)) * (sinh(x) - sin(x)); 
+    // }
+
+    // double a1 = -4.07;
+    // double b1 = -0.28;
+    // int n1 = 11;
+
+    //Exercicio 38: 
+    
+    double h(double x){        
+        return 159797.0/1250.0 - (479.0 * x)/5.0 + 12.0 * pow(x,2); 
     }
 
     double a1 = 0;
-    double b1 = 9.04;
-    int n1 = 11;
+    double b1 = 4.01;
+    int n1 = 12;
 
     bisection(h, a1, b1, n1);
 }
