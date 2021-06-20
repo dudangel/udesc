@@ -2,8 +2,8 @@
 #include <math.h>
 //Metodo de gauss-seidel
 
-#define ROWS 4
-#define COLS 4
+#define ROWS 3
+#define COLS 3
 
 void seidel(double a[ROWS][COLS], double b[COLS], double chute[COLS], int n){
     for(int it = 0; it < n; it++){
@@ -43,12 +43,20 @@ int main(){
     // int n = 18;
 
     //Exercicio 45
-    double a[ROWS][COLS] = {{-7.52622, -4.52711, -0.73932, 0.41535}, {-1.18885, 7.13035, -3.22533, 0.87173}, {4.74557, 2.05966, 9.94508, 1.29541}, {4.53545, 1.10215, 4.17906, 11.6611}};
-    double b[ROWS] = {-3.121, 0.72162, 2.33224, -1.8687};
+    // double a[ROWS][COLS] = {{-7.52622, -4.52711, -0.73932, 0.41535}, {-1.18885, 7.13035, -3.22533, 0.87173}, {4.74557, 2.05966, 9.94508, 1.29541}, {4.53545, 1.10215, 4.17906, 11.6611}};
+    // double b[ROWS] = {-3.121, 0.72162, 2.33224, -1.8687};
     
-    double chute[COLS] = {-3.31193, -2.73549, -1.81004, 3.65291};
+    // double chute[COLS] = {-3.31193, -2.73549, -1.81004, 3.65291};
 
-    int n = 16;
+    // int n = 16;
+
+    //Exercicio 46
+    double a[ROWS][COLS] = {{1.81285, -0.07943, 0.55164}, {-4.62625, 7.23812, 1.43011}, {-4.59682, -1.30192, 7.08051}};
+    double b[ROWS] = {-4.44977, 4.89357, -2.06154};
+    
+    double chute[COLS] = {-3.94524, 0.38206, 3.73109};
+
+    int n = 19;
 
     seidel(a, b, chute, n);
 }

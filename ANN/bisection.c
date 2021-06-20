@@ -228,7 +228,7 @@ int main(){
     // int n1 = 15;
 
 
-    //Exercicio 37: // iteração 2 com resultado errado
+    //Exercicio 37: 
     // w?
     //movimento da particula
     double mov = 1.33; 
