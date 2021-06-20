@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#define ROWS 4
-#define COLS 5
+#define ROWS 3
+#define COLS 3
 
 //Método do escalonamento ou da eliminação de Gauss
 
@@ -44,10 +44,18 @@ void gauss(double m[ROWS][COLS]){
 }
 
 int main(){
-    double m[ROWS][COLS] = {{1,2,3,1,2}, {1,5,3,1,4}, {2,4,-1,1,2}, {4,3,1,2,5}};
+    // double m[ROWS][COLS] = {{1,2,3,1,2}, {1,5,3,1,4}, {2,4,-1,1,2}, {4,3,1,2,5}};
 
-    print_matrix(m);
-    gauss(m);
+    // print_matrix(m);
+    // gauss(m);
     //Note que a matriz resultante tera seus elementos zerados abaixo da diagonal principal
     //Em seguida basta usar substituição reversa e teremos o resultado desse sistema
+
+    double m[ROWS][COLS] = {{-4.05, 0.99, -0.79}, {-1.83, 0.2, -0.12}, {-3.38, -2.55, -3.46}};
+
+    print_matrix(m);
+    printf("\n\n");
+    gauss(m);
+
+
 }

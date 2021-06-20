@@ -142,7 +142,7 @@ int main(){
     // double b1 = 100;
     // int n1 = 14;
 
-    //Exercicio 31:           --REFAZER, POIS NA INTERAÇÃ 15 O RESULTADO ESTA INCORRETO!!!!
+    //Exercicio 31:           
     // H?
     // double g = 9.81;
     // double L = 4.78;
@@ -212,7 +212,8 @@ int main(){
     // double b1 = 1;
     // int n1 = 13;
 
-    //Exercicio 36:
+    //Exercicio 36: 
+    // Subtrair o valor de r da aproximação calulada direto la em cima na bisseção
     // h?
     // double L = 1.95;
     // double r = 4.47;
@@ -230,26 +231,25 @@ int main(){
     //Exercicio 37: // iteração 2 com resultado errado
     // w?
     //movimento da particula
-    // double mov = 3.7; 
-    // double g = 9.81;
+    double mov = 1.33; 
+    double g = 9.81;
 
-    // double h(double x){        
-    //     return - mov - (g / (2.0 * x * x)) * (sinh(x) - sin(x)); 
-    // }
-
-    // double a1 = -4.07;
-    // double b1 = -0.28;
-    // int n1 = 11;
-
-    //Exercicio 38: 
-    
     double h(double x){        
-        return 159797.0/1250.0 - (479.0 * x)/5.0 + 12.0 * pow(x,2); 
+        return - mov - (g / (2 * x * x)) * (sinh(x) - sin(x)); 
     }
 
-    double a1 = 0;
-    double b1 = 4.01;
-    int n1 = 12;
+    double a1 = -4.9;
+    double b1 = -0.36;
+    int n1 = 11;
+
+    //Exercicio 38: 
+    // double h(double x){        
+    //     return 159797.0/1250.0 - (479.0 * x)/5.0 + 12.0 * pow(x,2); 
+    // }
+
+    // double a1 = 0;
+    // double b1 = 4.01;
+    // int n1 = 12;
 
     bisection(h, a1, b1, n1);
 }
