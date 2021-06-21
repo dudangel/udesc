@@ -32,7 +32,7 @@ Zeros de função, sistemas lineares e sistemas não lineares
 ## Assuntos P2: 
 Interpolação polinomial
 
-#### Interpolaçã polinomial
+#### Interpolação polinomial
 
     - [X] Polinomio de Lagrange (lagrange.py)
 
