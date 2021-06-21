@@ -1,0 +1,1 @@
+#Metodo das diferenças divididas (de Newton)
