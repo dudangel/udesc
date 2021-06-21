@@ -26,3 +26,18 @@ Zeros de função, sistemas lineares e sistemas não lineares
 #### Sistemas Não Lineares
 
     - [X] Método de Newton ou Método Iterativo de Newton (newtonIter.c)
+
+--------------------------------------
+
+## Assuntos P2: 
+Interpolação polinomial
+
+#### Interpolaçã polinomial
+
+    - [X] Polinomio de Lagrange (lagrange.py)
+
+    - [X] Método das Diferenças Divididas (dividedDiff.py)
+    
+    - [ ] Spline Cúbico 
+
+
