@@ -171,20 +171,36 @@ void main(){
 
     // ---------------------------------------
     //Exercicio 27:
+    // double f(double x){
+    //     return exp(5*x) - 2;
+    // }
+
+    // //Derivada da função dada
+    // double df(double x){
+    //     return 5 * exp(5*x);
+    // }
+
+    // //intervalo dado
+    // double x0 = -1.1677696;
+
+    // //nro de interações
+    // int n = 700;
+
+    //Prova - exercicio 2
     double f(double x){
-        return exp(5*x) - 2;
+        return x * x - 2;
     }
 
     //Derivada da função dada
     double df(double x){
-        return 5 * exp(5*x);
+        return 2 * x;
     }
 
     //intervalo dado
-    double x0 = -1.1677696;
+    double x0 = -2.01047;
 
     //nro de interações
-    int n = 700;
+    int n = 5;
 
     newton(f, df, x0, n);
 

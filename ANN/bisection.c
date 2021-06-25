@@ -231,16 +231,16 @@ int main(){
     //Exercicio 37: 
     // w?
     //movimento da particula
-    double mov = 1.33; 
-    double g = 9.81;
+    // double mov = 1.33; 
+    // double g = 9.81;
 
-    double h(double x){        
-        return - mov - (g / (2 * x * x)) * (sinh(x) - sin(x)); 
-    }
+    // double h(double x){        
+    //     return - mov - (g / (2 * x * x)) * (sinh(x) - sin(x)); 
+    // }
 
-    double a1 = -4.9;
-    double b1 = -0.36;
-    int n1 = 11;
+    // double a1 = -4.9;
+    // double b1 = -0.36;
+    // int n1 = 11;
 
     //Exercicio 38: 
     // double h(double x){        
@@ -250,6 +250,66 @@ int main(){
     // double a1 = 0;
     // double b1 = 4.01;
     // int n1 = 12;
+
+    //Prova - exercicio 1
+    // double h(double x){        
+    //     return pow(x,3) - 7 * x * x + 14 * x - 7; 
+    // }
+
+    // double a1 = 0.23891;
+    // double b1 = 4.13905;
+    // int n1 = 5;
+
+    //Prova - exercicio 5 
+    double n = 191640976;
+    double l = 1.41 * pow(10, -10);
+
+    double h(double x){        
+        return ((n + 1) / (1 + n * exp(-l * (n + 1) * x))) - (n/4);  
+    }
+
+    double a1 = 0;
+    double b1 = 1412;
+    int n1 = 15;
+
+    //Prova - exercicio 6
+    // double r = 8.07;
+    // double roS = 194.98;
+    // double roW = 1000;
+
+    // double h(double x){        
+    //     return ((PI * (x * x)) / 3.0) * (3.0 * r - x) + ((roS * ((4.0 * PI * pow(r,3)) / 3.0)) / roW) - ((4.0 * PI * pow(r,3)) / 3.0);  
+    // }
+
+    // double a1 = 0;
+    // double b1 = 2 * r;
+    // int n1 = 15;
+
+    //Prova - exercicio 7
+    // Subtrair o valor de r da aproximação calulada direto la em cima na bisseção
+    // double L = 8.88;
+    // double r = 2.72;
+    // double V = 5.14;
+
+    // double h(double x){        
+    //     return ( L * ( 0.5 * PI * r * r - r * r * asin(x/r) - x * sqrt(r * r - x * x) ) ) - V ;  
+    // }
+
+    // double a1 = 0;
+    // double b1 = r;
+    // int n1 = 15;
+
+    //Prova - exercicio 8
+    // double mov = 3.21;
+    // double g = 9.81;
+    
+    // double h(double x){        
+    //     return - mov - (g / (2 * x * x)) * (sinh(x) - sin(x));  
+    // }
+
+    // double a1 = -4.66;
+    // double b1 = -0.48;
+    // int n1 = 11;
 
     bisection(h, a1, b1, n1);
 }

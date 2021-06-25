@@ -80,11 +80,20 @@ int main(){
 
     //---------------------------------
     //Exercicio 21:
+    // double f(double x){
+    //     return x * x - 3;
+    // } 
+    // double x0 = -2.27455;
+    // double x1 = -0.50453;
+    // int n = 5;
+
+    //---------------------------------
+    //Prova - Exercicio 3:
     double f(double x){
-        return x * x - 3;
+        return x * x - 7;
     } 
-    double x0 = -2.27455;
-    double x1 = -0.50453;
+    double x0 = 2.1055;
+    double x1 = 3.17196;
     int n = 5;
 
     secant(f, x0, x1, n);

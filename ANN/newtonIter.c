@@ -133,17 +133,49 @@ int main(){
     // int n = 4;
 
     // Exercicio 50
+    // //equações e derivadas parciais
+    // double f1(double x, double y){
+    //     return x * x + y * y - 1.0;
+    // }
+
+    // double f2(double x, double y){
+    //     return x - y - 0.0;
+    // }
+
+    // double f1x(double x, double y){
+    //     return 2.0 * x;        
+    // }
+
+    // double f1y(double x, double y){
+    //     return 2.0 * y;
+    // }
+
+    // double f2x(double x, double y){
+    //     return 1.0;
+    // }
+
+    // double f2y(double x, double y){
+    //     return -1.0;
+    // }
+
+    // //estimativas iniciais e nro de iterações
+    // double x0 = -0.635;
+    // double y0 = -0.5769;
+
+    // int n = 4;
+
+    // Prova - Exercicio 11
     //equações e derivadas parciais
     double f1(double x, double y){
-        return x * x + y * y - 1.0;
+        return 4 * (x * x) + y * y - 5.0;
     }
 
     double f2(double x, double y){
-        return x - y - 0.0;
+        return x * x + pow(y,3) - 4.0;
     }
 
     double f1x(double x, double y){
-        return 2.0 * x;        
+        return 8.0 * x;        
     }
 
     double f1y(double x, double y){
@@ -151,16 +183,16 @@ int main(){
     }
 
     double f2x(double x, double y){
-        return 1.0;
+        return 2.0 * x;
     }
 
     double f2y(double x, double y){
-        return -1.0;
+        return 3.0 * y * y;
     }
 
     //estimativas iniciais e nro de iterações
-    double x0 = -0.635;
-    double y0 = -0.5769;
+    double x0 = 0.5492;
+    double y0 = 1.4896;
 
     int n = 4;
 
