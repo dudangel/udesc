@@ -38,6 +38,6 @@ Interpolação polinomial
 
     - [X] Método das Diferenças Divididas (dividedDiff.py)
     
-    - [ ] Spline Cúbico 
+    - [X] Spline Cúbico (spline.py)
 
 
