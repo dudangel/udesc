@@ -40,4 +40,16 @@ Interpolação polinomial
     
     - [X] Spline Cúbico (spline.py)
 
+#### Derivada
 
+    - [ ] Método das Diferenças Finitas
+
+    - [ ] Método da Extrapolação de Richardson
+
+#### Integral
+
+    - [ ] Regra dos Trapézios
+
+    - [ ] Regra de Simpson
+    
+    - [ ] Regra dos Trpézios para Integrais Duplas
