@@ -42,7 +42,7 @@ Interpolação polinomial
 
 #### Derivada
 
-    - [ ] Método das Diferenças Finitas
+    - [ ] Método das Diferenças Finitas (finiteDiff.py)
 
     - [ ] Método da Extrapolação de Richardson
 
